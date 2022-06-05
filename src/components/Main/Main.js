@@ -13,7 +13,7 @@ export default function Main() {
                 <img src={logo} alt="BCycle" />
                 <Buttons>
                     <button> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to=""> Encontrar parceiros </Link></button>
-                    <button> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="">  Acessar rotas </Link></button>
+                    <button> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/login">  Acessar rotas </Link></button>
                     <div> <Link style={{ textDecoration: 'none', color: '#2347FF' }} to="/cadastro">  Fazer cadastro  </Link></div>
                 </Buttons>
             </MainContainer>
