@@ -1,5 +1,6 @@
 import { GoogleMap, useLoadScript, Marker, Circle } from '@react-google-maps/api'
 import { MapsContainer } from './MapsStyle'
+import Footer from '../Footer/Footer'
 
 export default function Maps() {
     const { isLoaded } = useLoadScript({
@@ -20,18 +21,20 @@ export default function Maps() {
                     center={position}
                     zoom={15}
                 >
-                    <div style={{ width: '30px', height: '30px' }}>
-                        <Marker position={position} options={{
-                            label: {
-                                text: 'teste',
-                                className: 'marker'
-                            },
-                            icon: {
-                                url: 'https://www.shareicon.net/data/512x512/2015/11/03/666405_sign_512x512.png',
-                                // scaledSize: new google.maps.Size(25, 25)
+                    <Marker position={position} options={{
+                        label: {
+                            text: 'teste',
+                            className: 'marker'
+                        },
+                        icon: {
+                            url: 'https://www.shareicon.net/data/512x512/2015/11/03/666405_sign_512x512.png',
+                            size: {
+                                height: 10,
+                                width: 10
                             }
-                        }}  />
-                    </div>
+                            // scaledSize: new google.maps.Size(25, 25)
+                        }
+                    }} />
 
                     <Circle center={{
                         lat: -35.003000,
@@ -48,12 +51,12 @@ export default function Maps() {
                         visible: true,
                         radius: 100,
                         zIndex: 1
-                      }}> 
-                        
-                      </Circle>
+                    }}>
+
+                    </Circle>
                 </GoogleMap>
-                
             ) : ''}
+            <Footer />
         </MapsContainer>
     )
 }
