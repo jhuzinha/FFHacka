@@ -180,8 +180,8 @@ export default function Maps() {
 
                     </Circle>
                 </GoogleMap>
-
             ) : ''}
+            <Footer />
         </MapsContainer>
     )
 }
