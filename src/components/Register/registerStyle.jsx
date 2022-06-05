@@ -39,10 +39,9 @@ export const Forms = styled.form`
         width: 50%;
         height: 50px;
         border-radius: 35px;
-        background-color: none;
-        box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
-        border: none;
-        color: white;
+        background-color: #0D1724;
+        border: 1px solid rgba(82, 110, 255, 1);
+        color: rgba(82, 110, 255, 1);
         margin-right: 20px;
         font-size: 16px;
         font-weight: bold;

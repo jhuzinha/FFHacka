@@ -23,11 +23,7 @@ export default function Login() {
             <Forms onSubmit={fazerLogin} >
                 <label> E-mail <input placeholder="Digite seu email" type="email" value={email}  required id="email" onChange={(event) => setEmail(event.target.value)} /> </label>
                 <label> Senha <input placeholder="Informe sua senha" type="password"  value={password} required id="password" onChange={(event) => setPassword(event.target.value)} /> </label>
-               
-                <div>
-                    <button type="submit"> Entrar </button>
-                    <p> Recuperar a senha </p>
-                </div>
+                <button type="submit"> Entrar  </button>
             </Forms>
         </LoginContainer>
 

@@ -74,13 +74,18 @@ export const Forms = styled.form`
         outline: 0;
     }
 
-    div {
+    button {
         width: 30%;
         height: 50px;
-        box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
-        border-radius: 16px;
-        border: none;
-        color: white;
+        text-align:  center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0D1724;
+
+        border: 1px solid rgba(82, 110, 255, 1);
+        color: rgba(82, 110, 255, 1);
+        border-radius: 35px;
         margin-right: 20px;
         font-size: 16px;
         font-weight: bold;
