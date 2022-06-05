@@ -47,18 +47,9 @@ export const Buttons = styled.div`
         font-size: 15px;
         line-height: 14px;
     }
-
-    div {
-        width: 80%;
-        color: #2347FF;
-        height: 56px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1.5px solid #284BFF;
-        box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
-        border-radius: 16px;
-     }
+    p {
+        font-size: 15px;
+    }
 
     
 `

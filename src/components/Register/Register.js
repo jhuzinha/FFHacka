@@ -1,8 +1,6 @@
-import { RegisterContainer, Forms} from "../Register/registerStyle"
+import { RegisterContainer, Forms, Head} from "../Register/registerStyle"
 import { useState } from "react";
-import logo from "../../Assets/images/Logo.png";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { Link, useNavigate } from "react-router-dom";
 
 
 export default function Register () {
@@ -10,32 +8,25 @@ export default function Register () {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [repeatpassword, setRepeatPassword] = useState("")
-    const form = useRef();
+    const navigate = useNavigate();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+    function  fazerRegistro(event) {
+        event.preventDefault();
+        navigate("/login")
+    }
     
     return (
         <RegisterContainer> 
-            <header>
-                <img src={logo} alt="BCycle" /> 
-            </header> 
-            <Forms onSubmit={sendEmail}>
-                <label> Nome <input placeholder="Digite seu nome" type="email" name="" value={name} id="" onChange={(event) => setName(event.target.value)} /> </label>
-                <label> E-mail <input placeholder="Digite seu email" type="email" name="" value={email} id="" onChange={(event) => setEmail(event.target.value)} /> </label>
-                <label> Senha <input placeholder="Informe sua senha" type="password" name='' value={password} id="" onChange={(event) => setPassword(event.target.value)} /> </label>
-                <label> Confirme sua senha <input placeholder="Informe sua senha novamente" type="repeatpassword" name='' value={repeatpassword} id="" onChange={(event) => setRepeatPassword(event.target.value)} /> </label>
-                <div>
-                    <button type="submit"> Confirmar cadastro </button>
-                </div>
+            <Head>
+                <div></div>
+                <p> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/login"> Login </Link> </p> 
+                <h1>   Cadastro  </h1>
+            </Head> 
+            <Forms onSubmit={(e) => fazerRegistro(e)}>
+                <label> Nome <input placeholder="Digite seu nome" type="name" name="nome" required value={name} id="" onChange={(event) => setName(event.target.value)} /> </label>
+                <label> E-mail <input placeholder="Digite seu email" type="email" name="email" required value={email} id="" onChange={(event) => setEmail(event.target.value)} /> </label>
+                <label> Senha <input placeholder="Informe sua senha" type="password" name='password' required value={password} id="" onChange={(event) => setPassword(event.target.value)} /> </label>
+                <div type="submit"> Confirmar cadastro </div>
             </Forms>
         </RegisterContainer>
     )

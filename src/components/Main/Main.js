@@ -12,9 +12,8 @@ export default function Main() {
                 </figure>
                 <img src={logo} alt="BCycle" />
                 <Buttons>
-                    <button> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to=""> Encontrar parceiros </Link></button>
-                    <button> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/login">  Acessar rotas </Link></button>
-                    <div> <Link style={{ textDecoration: 'none', color: '#2347FF' }} to="/cadastro">  Fazer cadastro  </Link></div>
+                    <button> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/cadastro"> Começar </Link></button>
+                    <p> Já tem uma conta? <span> <Link to={"/login"}> Entrar </Link></span> </p>
                 </Buttons>
             </MainContainer>
 

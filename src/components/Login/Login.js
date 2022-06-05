@@ -1,19 +1,28 @@
-import { LoginContainer, Forms } from "./loginStyle";
+import { LoginContainer, Forms, Head } from "./loginStyle";
 import { useState } from "react";
-import logo from "../../Assets/images/Logo.png";
+import { Link, useNavigate } from "react-router-dom";
+
 
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+
+    function  fazerLogin(event) {
+        event.preventDefault();
+        navigate("/home")
+    }
     return (
         <LoginContainer>
-            <header>
-                <img src={logo} alt="BCycle" /> 
-            </header> 
+            <Head>
+                <div></div>
+                <h1> Login </h1> 
+                <p> <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/cadastro">  Cadastro  </Link></p>
+            </Head> 
 
-            <Forms>
-                <label> E-mail <input placeholder="Digite seu email" type="email" name="" value={email} id="" onChange={(event) => setEmail(event.target.value)} /> </label>
-                <label> Senha <input placeholder="Informe sua senha" type="password" name='' value={password} id="" onChange={(event) => setPassword(event.target.value)} /> </label>
+            <Forms onSubmit={fazerLogin} >
+                <label> E-mail <input placeholder="Digite seu email" type="email" value={email}  required id="email" onChange={(event) => setEmail(event.target.value)} /> </label>
+                <label> Senha <input placeholder="Informe sua senha" type="password"  value={password} required id="password" onChange={(event) => setPassword(event.target.value)} /> </label>
                
                 <div>
                     <button type="submit"> Entrar </button>
