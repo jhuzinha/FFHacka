@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../Login/Login";
 import Main from "../Main/Main";
+import Maps from "../Maps/Maps";
 import Register from "../Register/Register"
 
 export default function App () {
@@ -11,6 +12,7 @@ export default function App () {
                 <Route path="/" element = {  <Main />} />
                 <Route path="/login" element = { < Login/> } />
                 <Route path="/cadastro" element = { < Register /> } />
+                <Route path="/mapa" element = { < Maps /> } />
             </Routes>
         </BrowserRouter>
     )
