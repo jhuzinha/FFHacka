@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 
 
 export default function Register () {
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [repeatpassword, setRepeatPassword] = useState("")
@@ -28,6 +29,7 @@ export default function Register () {
                 <img src={logo} alt="BCycle" /> 
             </header> 
             <Forms onSubmit={sendEmail}>
+                <label> Nome <input placeholder="Digite seu nome" type="email" name="" value={name} id="" onChange={(event) => setName(event.target.value)} /> </label>
                 <label> E-mail <input placeholder="Digite seu email" type="email" name="" value={email} id="" onChange={(event) => setEmail(event.target.value)} /> </label>
                 <label> Senha <input placeholder="Informe sua senha" type="password" name='' value={password} id="" onChange={(event) => setPassword(event.target.value)} /> </label>
                 <label> Confirme sua senha <input placeholder="Informe sua senha novamente" type="repeatpassword" name='' value={repeatpassword} id="" onChange={(event) => setRepeatPassword(event.target.value)} /> </label>
