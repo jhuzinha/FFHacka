@@ -1,0 +1,7 @@
+:root {
+    --bg_color: #0D1724;
+    --bottom_color: linear-gradient(90deg, #3F48C0 0%, #143AFE 110.62%);
+    --description_color: rgba(64, 72, 191, 1);
+    --secondbottom_color: rgba(35, 71, 255, 1);
+
+}
