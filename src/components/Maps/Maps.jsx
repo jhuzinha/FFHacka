@@ -182,7 +182,10 @@ export default function Maps() {
                     </Circle>
                 </GoogleMap>
             ) : ''}
-            <Footer />
+            {/* <PorfileContainer>
+                <Profile />
+            </PorfileContainer> */}
+            <Footer  />
         </MapsContainer>
     )
 }
