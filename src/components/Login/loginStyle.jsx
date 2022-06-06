@@ -19,7 +19,7 @@ export const Head = styled.header`
     background: #526EFF;
     width: 100%;
     position: relative;
-    margin-bottom: 100px;     
+    margin-bottom: 80px;     
     div {
         position: absolute;
         bottom: 0; 
@@ -75,7 +75,7 @@ export const Forms = styled.form`
     }
 
     button {
-        width: 30%;
+        width: 100%;
         height: 50px;
         text-align:  center;
         display: flex;
@@ -98,6 +98,7 @@ export const Forms = styled.form`
     div {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
 `

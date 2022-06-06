@@ -7,7 +7,6 @@ export default function Register () {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [repeatpassword, setRepeatPassword] = useState("")
     const navigate = useNavigate();
 
     function  fazerRegistro(event) {
@@ -26,7 +25,7 @@ export default function Register () {
                 <label> Nome <input placeholder="Digite seu nome" type="name" name="nome" required value={name} id="" onChange={(event) => setName(event.target.value)} /> </label>
                 <label> E-mail <input placeholder="Digite seu email" type="email" name="email" required value={email} id="" onChange={(event) => setEmail(event.target.value)} /> </label>
                 <label> Senha <input placeholder="Informe sua senha" type="password" name='password' required value={password} id="" onChange={(event) => setPassword(event.target.value)} /> </label>
-                <button type="submit"> Confirmar cadastro </button>
+                <div><button type="submit"> Confirmar cadastro </button></div>
             </Forms>
         </RegisterContainer>
     )

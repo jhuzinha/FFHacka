@@ -10,7 +10,7 @@ export default function Login() {
 
     function  fazerLogin(event) {
         event.preventDefault();
-        navigate("/home")
+        navigate("/inicio")
     }
     return (
         <LoginContainer>
@@ -23,7 +23,8 @@ export default function Login() {
             <Forms onSubmit={fazerLogin} >
                 <label> E-mail <input placeholder="Digite seu email" type="email" value={email}  required id="email" onChange={(event) => setEmail(event.target.value)} /> </label>
                 <label> Senha <input placeholder="Informe sua senha" type="password"  value={password} required id="password" onChange={(event) => setPassword(event.target.value)} /> </label>
-                <button type="submit"> Entrar  </button>
+                
+                <div><button type="submit"> Entrar  </button></div>
             </Forms>
         </LoginContainer>
 

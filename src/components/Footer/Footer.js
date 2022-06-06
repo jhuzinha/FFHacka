@@ -44,7 +44,7 @@ export default function Footer() {
                 <Emergency>
                     <div>
                         <Link to='/inicio'>
-                            <button>Bike Quebrou :(</button>
+                            <button>Bike Quebrou : (</button>
                         </Link>
                         <Link to='/emergencia'>
                             <button className='emergency'>Emergência</button>
