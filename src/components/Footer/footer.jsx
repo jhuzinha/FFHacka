@@ -66,6 +66,7 @@ export const PlaceSelected = styled.div`
         height: 91px;
         border-radius: 40px;
         margin-right: 15px;
+        object-fit: cover;
     }
 
     h1 {

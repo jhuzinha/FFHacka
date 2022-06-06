@@ -3,6 +3,8 @@ import { IoChevronForward, IoHeartSharp, IoHeartOutline, IoSearchOutline } from 
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Search from "../Search/Search.js";
+import perfil from '../../Assets/images/perfil.png'
+import parking from '../../Assets/images/parking.png'
  
 export default function Home() {
     const [width, setWidth] = useState('0%')
@@ -13,12 +15,12 @@ export default function Home() {
             <HomeContainer>
                 <figure>
                     <div>
-                        <img src="" alt="" />
+                        <img src={perfil} alt="perfil" />
                         <div>
                             <IoSearchOutline fontSize={30} cursor='pointer' onClick={() => {setWidth('100%'); setDisplay('initial');}} />
                         </div>
                     </div>
-                    <h1>Ola, fulano </h1>
+                    <h1>Ola, Usuario </h1>
                     <p>Onde vamos pedalar hoje? </p>
                 </figure>
 
@@ -35,14 +37,16 @@ export default function Home() {
                         <h2>Perto de voce</h2>
                         <div>
                             <h3>Navegar no mapa</h3>
-                            <IoChevronForward />
+                            <Link to='/mapa'>
+                                <IoChevronForward />
+                            </Link>
                         </div>
                     </div>
                 </CloseYou>
 
                 <Carousel>
                     <div>
-                        <img src="" alt="" />
+                        <img src={parking} alt="parking" />
                         <button>Distancia <span>15 m</span></button>
                         <h4>Estacionamento Parkbike</h4>
                         <div className="avaliation">
@@ -57,7 +61,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <img src="" alt="" />
+                        <img src={parking} alt="parking" />
                         <button>Distancia <span>15 m</span></button>
                         <h4>Estacionamento Parkbike</h4>
                         <div className="avaliation">
@@ -72,7 +76,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <img src="" alt="" />
+                        <img src={parking} alt="parking" />
                         <button>Distancia <span>15 m</span></button>
                         <h4>Estacionamento Parkbike</h4>
                         <div className="avaliation">
@@ -88,7 +92,7 @@ export default function Home() {
                     </div>
                 </Carousel>
             </HomeContainer>
-            <Search width={width} display={display} />
+            <Search width={width} setWidth={setWidth} display={display} setDisplay={setDisplay} />
         </>
     )
 }

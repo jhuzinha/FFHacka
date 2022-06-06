@@ -26,6 +26,7 @@ export const HomeContainer = styled.div`
         border: 3.6px solid #FFFFFF;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 100%;
+        object-fit: cover;
     }
 
     h1 {

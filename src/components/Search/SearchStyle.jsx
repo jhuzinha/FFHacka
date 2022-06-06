@@ -35,4 +35,9 @@ export const SearchContainer = styled.div`
         margin: 0 auto;
         margin-bottom: 25px;
     }
+
+    .back {
+        display: ${({ display }) => display};
+        margin-left: 20px;
+    }
 `

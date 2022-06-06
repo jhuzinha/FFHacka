@@ -1,10 +1,16 @@
 import { GoogleMap, useLoadScript, Marker, Circle, BicyclingLayer } from '@react-google-maps/api';
-import { MapsContainer } from './MapsStyle';
+import { MapsContainer, PerfilToggle, ProfileContainer } from './MapsStyle';
 import Footer from '../Footer/Footer'
+import Profile from '../Profile/Profile';
+import { useState } from 'react';
+import perfil from '../../Assets/images/perfil.png'
 
 const libraries = ["places"];
 
 export default function Maps() {
+    const [padding, setPadding] = useState('0px')
+    const [width, setWidth] = useState('0px')
+
     const google = window.google;
     const { isLoaded } = useLoadScript({
         id: 'google-map-script',
@@ -182,9 +188,12 @@ export default function Maps() {
                     </Circle>
                 </GoogleMap>
             ) : ''}
-            {/* <PorfileContainer>
-                <Profile />
-            </PorfileContainer> */}
+            <ProfileContainer>
+                <Profile width={width} setWidth={setWidth} padding={padding} setPadding={setPadding} />
+            </ProfileContainer>
+            <PerfilToggle onClick={() => {setWidth('360px'); setPadding('32px');}}>
+                <img src={perfil} alt="perfil" />
+            </PerfilToggle>
             <Footer  />
         </MapsContainer>
     )

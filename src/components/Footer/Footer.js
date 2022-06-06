@@ -4,6 +4,7 @@ import { BiLockOpenAlt } from 'react-icons/bi'
 import { FaWrench } from 'react-icons/fa'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import parking from '../../Assets/images/parking.png'
 
 export default function Footer() {
     const [place, setPlace] = useState(false)
@@ -14,7 +15,7 @@ export default function Footer() {
             {place ? (
                 <PlaceSelected>
                     <div className='place'>
-                        <img src='' alt='' />
+                        <img src={parking} alt='parking' />
                         <div>
                             <h1>Estacionamento Parkbike</h1>
                             <h1>Distância <span>150 m</span></h1>
