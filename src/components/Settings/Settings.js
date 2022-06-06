@@ -8,7 +8,7 @@ export default function Settings() {
             <ContainerSettings>
                 <Head>
                     <div></div>
-                    <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/perfil"><h1><BsArrowLeft /> Configuração </h1> </Link>
+                    <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/mapa"><h1><BsArrowLeft /> Configuração </h1> </Link>
                 </Head>
                 <Informs>
                     <p> Numero de celular </p>

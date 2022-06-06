@@ -25,7 +25,7 @@ export default function Support() {
             <SupportContainer>
                 <Head>
                     <div></div>
-                    <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/perfil"><h1><BsArrowLeft /> Suporte </h1> </Link>
+                    <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/mapa"><h1><BsArrowLeft /> Suporte </h1> </Link>
                 </Head>
                 
                 <Forms onSubmit={(e) => enviarMensagem(e)}>

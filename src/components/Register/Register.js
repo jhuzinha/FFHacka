@@ -1,6 +1,7 @@
 import { RegisterContainer, Forms, Head} from "../Register/registerStyle"
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import NameContext from "../../context/NameContext";
 
 
 export default function Register () {
@@ -8,9 +9,11 @@ export default function Register () {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+    const { setNameUser } = useContext(NameContext)
 
     function  fazerRegistro(event) {
         event.preventDefault();
+        setNameUser(name)
         navigate("/login")
     }
     

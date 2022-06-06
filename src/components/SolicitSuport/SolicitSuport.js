@@ -8,7 +8,7 @@ export default function SolicitSupport() {
             <SolicitContainer>
                 <Head>
                     <div></div>
-                    <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/perfil"><h1> Solicitações de Suporte </h1> </Link>
+                    <Link style={{ textDecoration: 'none', color: '#ffffff' }} to="/mapa"><h1> Solicitações de Suporte </h1> </Link>
                 </Head>
                 <Menssage>
                     <div> <FiMail color="rgba(82, 110, 255, 1)" /> <p> 05 Junho </p> </div>

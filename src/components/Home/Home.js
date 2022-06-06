@@ -1,14 +1,16 @@
 import { Buttons, CloseYou, HomeContainer, Carousel } from "./homeStyle.jsx";
 import { IoChevronForward, IoHeartSharp, IoHeartOutline, IoSearchOutline } from 'react-icons/io5'
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Search from "../Search/Search.js";
 import perfil from '../../Assets/images/perfil.png'
 import parking from '../../Assets/images/parking.png'
+import NameContext from "../../context/NameContext.js";
  
 export default function Home() {
     const [width, setWidth] = useState('0%')
     const [display, setDisplay] = useState('none')
+    const { nameUser } = useContext(NameContext)
 
     return (
         <>
@@ -20,7 +22,7 @@ export default function Home() {
                             <IoSearchOutline fontSize={30} cursor='pointer' onClick={() => {setWidth('100%'); setDisplay('initial');}} />
                         </div>
                     </div>
-                    <h1>Ola, Usuario </h1>
+                    <h1>Ola, {nameUser} </h1>
                     <p>Onde vamos pedalar hoje? </p>
                 </figure>
 

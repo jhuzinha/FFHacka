@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { NameProvider } from "../../context/NameContext";
 import Emergency from "../Emergency/Emergency";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
@@ -13,20 +14,22 @@ import Support from "../Support/Support";
 export default function App () {
 
     return (
-        <BrowserRouter> 
-            <Routes>
-                <Route path="/" element = {  <Main />} />
-                <Route path="/login" element = { < Login/> } />
-                <Route path="/cadastro" element = { < Register /> } />
-                <Route path="/mapa" element = { < Maps /> } />
-                <Route path="/inicio" element = { < Home /> } />
-                <Route path="/suporte" element = {<Support />} />
-                <Route path="/mensagem1" element = {<Message1/>} />
-                <Route path="/solicitacaosuporte" element = {<SolicitSupport/>} />
-                <Route path="/configuracao" element = {<Settings/>} />
-                <Route path="/emergencia" element = { < Emergency /> } />
-            </Routes>
-        </BrowserRouter>
+        <NameProvider>
+            <BrowserRouter> 
+                <Routes>
+                    <Route path="/" element = {  <Main />} />
+                    <Route path="/login" element = { < Login/> } />
+                    <Route path="/cadastro" element = { < Register /> } />
+                    <Route path="/mapa" element = { < Maps /> } />
+                    <Route path="/inicio" element = { < Home /> } />
+                    <Route path="/suporte" element = {<Support />} />
+                    <Route path="/mensagem1" element = {<Message1/>} />
+                    <Route path="/solicitacaosuporte" element = {<SolicitSupport/>} />
+                    <Route path="/configuracao" element = {<Settings/>} />
+                    <Route path="/emergencia" element = { < Emergency /> } />
+                </Routes>
+            </BrowserRouter>
+        </NameProvider>
     )
 
 }
