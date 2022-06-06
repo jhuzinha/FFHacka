@@ -3,7 +3,12 @@ import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Main from "../Main/Main";
 import Maps from "../Maps/Maps";
+import Message1 from "../Message/Message1";
+import Message2 from "../Message/Message2";
 import Register from "../Register/Register"
+import Settings from "../Settings/Settings";
+import SolicitSupport from "../SolicitSuport/SolicitSuport";
+import Support from "../Support/Support";
 
 export default function App () {
 
@@ -15,6 +20,11 @@ export default function App () {
                 <Route path="/cadastro" element = { < Register /> } />
                 <Route path="/mapa" element = { < Maps /> } />
                 <Route path="/inicio" element = { < Home /> } />
+                <Route path="/suporte" element = {<Support />} />
+                <Route path="/mensagem1" element = {<Message1/>} />
+                <Route path="/mensagem2" element = {<Message2 /> } /> 
+                <Route path="/solicitacaosuporte" element = {<SolicitSupport/>} />
+                <Route path="/configuracao" element = {<Settings/>} />
             </Routes>
         </BrowserRouter>
     )

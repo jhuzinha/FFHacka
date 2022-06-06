@@ -1,5 +1,5 @@
 import { AiOutlineCompass } from 'react-icons/ai'
-import { Foot } from './footer.jsx'
+import { Foot } from './footer'
 import { BiLockOpenAlt } from 'react-icons/bi'
 import { FaWrench } from 'react-icons/fa'
 import { useState } from 'react'
