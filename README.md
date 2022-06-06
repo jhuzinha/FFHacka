@@ -6,7 +6,7 @@
    ________________________________________________________________
 </h3>
 <br>
-O BCycle é uma aplicação Web&Mobile para ajudar os ciclistas na localizaçao de lugares confiaveis para estacionamento de bicicleta e também buscando a prevenção de acidentes
+O BCycle é uma aplicação Web&Mobile para ajudar os ciclistas na localizaçao de lugares confiaveis para estacionamento de bicicleta e também buscando a prevenção de acidentes.
 
 Essa aplicação foi construída para o FFHacka. 
 
@@ -36,3 +36,5 @@ Bibliotecas Utilizadas:
     "react-scripts"
     "styled-components"
 ```
+Teste o aplicativo aqui : 
+https://ffhacka.vercel.app/
