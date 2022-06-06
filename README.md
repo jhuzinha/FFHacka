@@ -1,5 +1,5 @@
 <h3 align="center">
-   <img align="left" alt="Abhishek's LinkedIN" width="22px" src="./Assets/images/Logo.png" />
+   <img width="22px" src="./Assets/images/Logo.png" />
     <br><br>
     <b> Segurança, comodidade e confiança </b>  
     <br>
