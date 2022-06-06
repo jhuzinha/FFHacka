@@ -3,8 +3,8 @@
     <br><br>
     <b> Segurança, comodidade e confiança </b>  
     <br>
+   ________________________________________________________________
 </h3>
-________________________________________________________________
 <br>
 O BCycle é uma aplicação Web&Mobile para ajudar os ciclistas na localizaçao de lugares confiaveis para estacionamento de bicicleta e também buscando a prevenção de acidentes
 
