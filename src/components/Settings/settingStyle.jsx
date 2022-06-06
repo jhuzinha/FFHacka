@@ -1,23 +1,31 @@
 import styled from "styled-components";
 
 
-export const ContainerSettings = styled.section `
+export const ContainerSettings = styled.section`
     width: 100%;
     height: 100%;
-    div {
-        width: 80%;
-        height: 1px;
+
+`
+export const Informs = styled.div`
+    padding: 30px;
+    p {
+        font-size: 21px;
+        margin-bottom: 5px;
     }
 
+    h5 {
+        font-weight: bold;
+    }
+
+    div {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(199, 199, 204, 1);
+        margin-top:  20px;
+        margin-bottom:  20px;
+    }
 
 `
-
-export const Informs = styled.div`
-    padding: 20px;
-
-
-`
-
 export const Head = styled.header`
     height: 200px;
     display: flex;
@@ -30,7 +38,7 @@ export const Head = styled.header`
     background: #526EFF;
     width: 100%;
     position: relative;
-    margin-bottom: 50px;     
+    margin-bottom: 20px;     
     div {
         position: absolute;
         bottom: 0; 

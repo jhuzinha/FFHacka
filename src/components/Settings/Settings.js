@@ -12,13 +12,13 @@ export default function Settings() {
                 </Head>
                 <Informs>
                     <p> Numero de celular </p>
-                    <p> 41 9 9213-2086 </p>
+                    <h5> 41 9 9213-2086 </h5>
                     <div></div>
                     <p> Endereço favorito </p>
-                    <p> São Francisco </p>
+                    <h5> São Francisco </h5>
                     <div></div>
                     <p> Idioma </p>
-                    <p> PT-BR </p>
+                    <h5> PT-BR </h5>
                     <div></div>
                 </Informs>
 

@@ -17,7 +17,7 @@ export default function Support() {
 
     function enviarMensagem(event) {
         event.preventDefault();
-        navigate("/mensagem", {dados})
+        navigate("/mensagem1", {state: {dados: dados}})
     }
 
     return (
@@ -38,7 +38,4 @@ export default function Support() {
             </SupportContainer>
         </>
     )
-
-
-
 }
