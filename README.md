@@ -1,5 +1,5 @@
 <h3 align="center">
-   <img width="22px" src="./src/Assets/images/Logo.png" />
+   <img width="300px" src="./src/Assets/images/Logo.png" />
     <br><br>
     <b> Segurança, comodidade e confiança </b>  
     <br>
