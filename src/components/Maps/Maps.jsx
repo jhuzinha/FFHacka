@@ -1,5 +1,6 @@
-import { GoogleMap, useLoadScript, Marker, Circle, BicyclingLayer, StandaloneSearchBox } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, Marker, Circle, BicyclingLayer } from '@react-google-maps/api';
 import { MapsContainer } from './MapsStyle';
+import Footer from '../Footer/Footer'
 
 const libraries = ["places"];
 
@@ -181,7 +182,10 @@ export default function Maps() {
                     </Circle>
                 </GoogleMap>
             ) : ''}
-            <Footer />
+            {/* <PorfileContainer>
+                <Profile />
+            </PorfileContainer> */}
+            <Footer  />
         </MapsContainer>
     )
 }

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Emergency from "../Emergency/Emergency";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Main from "../Main/Main";
@@ -15,6 +16,7 @@ export default function App () {
                 <Route path="/cadastro" element = { < Register /> } />
                 <Route path="/mapa" element = { < Maps /> } />
                 <Route path="/inicio" element = { < Home /> } />
+                <Route path="/emergencia" element = { < Emergency /> } />
             </Routes>
         </BrowserRouter>
     )
